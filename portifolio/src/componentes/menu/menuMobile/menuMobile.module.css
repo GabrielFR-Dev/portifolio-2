@@ -1,3 +1,71 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*Menu que sobe de baixo*/
+
 .menuMobile {
-    background-color: red;
+    width: 100%;
+    height: 70%;
+    background: #000;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    animation: subir 0.3s ease cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/*lista*/
+
+.menuMobile ul {
+    list-style: none;
+    padding: 40px;
+    text-align: center;
+}
+
+.menuMobile ul li {
+    margin-bottom: 25px;
+    animation: fadeItem 0.4s ease forwards;
+}
+
+.linkMobile {
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    transition: color 0.2s ease, transform 0.2 ease;
+}
+.linkMobile:hover{
+    color: #00ffc8;
+    transform: scale(1.1);
+}
+
+/*Animação*/
+@keyframes subir {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeItem {
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+    
 }
