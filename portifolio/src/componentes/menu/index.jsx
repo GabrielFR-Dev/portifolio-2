@@ -9,6 +9,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { MdOutlineMenu } from "react-icons/md"; {/*<MdOutlineMenu />*/ }
 import { IoMdClose } from "react-icons/io"; {/*<IoMdClose />*/ }
 import MenuMobile from "./menuMobile/index";
+import ThemeToggle from "../themeToggle/themeToggle";
 
 export default function Menu() {
 
@@ -58,6 +59,8 @@ export default function Menu() {
                             <GrLinkedinOption className={estilos.icones1} />
                         </a>
 
+                        <ThemeToggle/>
+
                         <a href="https://github.com/GabrielFR-Dev" target="_blank" rel="noopener noreferrer" title="Ir para GitHub" aria-label="Ir para GitHub">
                             <IoLogoGithub className={estilos.icones2} />
                         </a>
@@ -67,6 +70,7 @@ export default function Menu() {
             
             {/*Menu Mobile */}
             <div className={estilos.menuMobile}>
+                <ThemeToggle className={estilos.botaoTrocarTemaMobile}/>
                 <button className={estilos.botaoMobile} onClick={abrirMenu}>
                     {menuOpen ? <IoMdClose /> : <MdOutlineMenu />}
                 </button>
