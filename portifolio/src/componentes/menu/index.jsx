@@ -1,11 +1,13 @@
 "use client"
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import estilos from "./menu.module.css";
+import Image from "next/image";
 import Link from "next/link";
+import Gif from "../../../public/gif3.gif";
 import { GrLinkedinOption } from "react-icons/gr";
 import { IoLogoGithub } from "react-icons/io";
-import { MdOutlineMenu } from "react-icons/md"; 
-import { IoMdClose } from "react-icons/io"; 
+import { MdOutlineMenu } from "react-icons/md"; {/*<MdOutlineMenu />*/ }
+import { IoMdClose } from "react-icons/io"; {/*<IoMdClose />*/ }
 import MenuMobile from "./menuMobile/index";
 
 export default function Menu() {
@@ -62,18 +64,13 @@ export default function Menu() {
                     </div>
                 </nav>
             </header>
-
+            
             {/*Menu Mobile */}
-            <div className={estilos.containerMenuMobile}>
-                <button
-                    className={estilos.botaoMobile}
-                    onClick={abrirMenu}
-                >
+            <div className={estilos.menuMobile}>
+                <button className={estilos.botaoMobile} onClick={abrirMenu}>
                     {menuOpen ? <IoMdClose /> : <MdOutlineMenu />}
                 </button>
-
-                {menuOpen && <MenuMobile fecharMenu={abrirMenu} />}
-
+                {menuOpen && (<MenuMobile fecharMenu={abrirMenu} />)}
             </div>
         </>
     )

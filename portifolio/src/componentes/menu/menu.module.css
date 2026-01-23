@@ -34,7 +34,6 @@
     transition: transform 0.2s ease;
     display: inline-block;
 }
-
 .link:hover {
     transform: scale(1.04);
 }
@@ -65,7 +64,6 @@
     transform: scale(1.1) translateY(-2px);
     color: rgb(0, 255, 13)
 }
-
 .videoLogo {
     width: 100%;
     height: 170px;
@@ -75,40 +73,37 @@
 /*MOBILE*/
 .containerMenuMobile {
     width: 100%;
-    height: 10%;
-    background-color: red;
-    padding: 5px 0px;
-    position: fixed;
+    
+    background-color: blue;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
-
 .botaoMobile {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 1001;
-
     font-size: 40px;
     background: none;
     border: none;
-    cursor: pointer;
+}
+.menuMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
-
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 900px){
     .menu {
         display: block;
     }
 }
-
 @media (max-width: 600px) {
-    .menu {
+    .menu{
         display: none;
     }
-
-    .menuMobile {
+    .menuMobile{
         display: block;
     }
-
+    
 }
