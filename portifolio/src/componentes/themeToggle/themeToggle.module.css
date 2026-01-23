@@ -5,6 +5,7 @@
     color: var(--text);
     transition: transform 0.6s ease-out, color 0.4s ease-out;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent; /* Safari / Chrome mobile */;
 }
 
 .botaoTrocaDeTemas:hover {

@@ -33,22 +33,27 @@ export default function Menu() {
                     <ul className={estilos.listaMenu}>
                         <li>
                             <Link href="/" className={estilos.link} aria-label="Ir para página principal" rel="noopener noreferrer">
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/about" className={estilos.link} aria-label="Ir para página principal" rel="noopener noreferrer">
                                 About
                             </Link>
                         </li>
 
                         <li>
-                            <Link href="/habilidades" className={estilos.link} aria-label="Ir para minhas Habilidades" rel="noopener noreferrer">
+                            <Link href="/mySkills" className={estilos.link} aria-label="Ir para minhas Habilidades" rel="noopener noreferrer">
                                 My Skills
                             </Link>
                         </li>
                         <li>
-                            <Link href="/projetos" className={estilos.link} aria-label="Ir para meus projetos" rel="noopener noreferrer">
+                            <Link href="/projectss" className={estilos.link} aria-label="Ir para meus projetos" rel="noopener noreferrer">
                                 Projects
                             </Link>
                         </li>
                         <li>
-                            <Link href="/formacao" className={estilos.link} aria-label="Ir para minha formação" rel="noopener noreferrer">
+                            <Link href="/training" className={estilos.link} aria-label="Ir para minha formação" rel="noopener noreferrer">
                                 Training
                             </Link>
                         </li>
